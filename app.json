@@ -1,5 +1,5 @@
 {
-    "name": "EvaMariaBot",
+    "name": "Mavericksbot",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/EvamariaTG/EvaMaria",
-    "repository": "https://github.com/EvamariaTG/EvaMaria",
+    "website": "https://github.com/Maverick080685/EvaMaria",
+    "repository": "https://github.com/Maverick080685/EvaMaria",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -96,12 +96,18 @@
             "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
             "required": false
         }
-    },
-    "addons": [],
-    "buildpacks": [{
+
+        "START_MSG": {
+            "description": "Display the start message when someone click start ",
+            "required": false
+        }
+  
+        },
+        "addons": [],
+        "buildpacks": [{
         "url": "heroku/python"
-    }],
-    "formation": {
+        }],
+        "formation": {
         "worker": {
             "quantity": 1,
             "size": "free"
